@@ -12,7 +12,7 @@ fetch('https://jsonplaceholder.typicode.com/todos/1')
     document.body.appendChild(a);
     a.click();
     window.URL.revokeObjectURL(url);
-    alert('Uh oh. Your browser recognized a file downloaded a file that may have been dangerous.'); // or you know, something with better UX...
+    alert('Uh oh. Your browser recognized a file downloaded a file that may have been dangerous.');
   })
   .catch(() => alert('oh no!'));
   </script>
