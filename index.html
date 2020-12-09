@@ -45,10 +45,28 @@ function open_win() {
     
 }
 </script>
+<script type="text/javascript">
+function open_ved() {
+    var linkArray = []; // your links
+    for (var i = 0; i < linkArray.length; i++) {
+    // will open each link in the current window
+        chrome.tabs.create({
+            url: linkArray[i]
+        });
+}   
+    
+}
+
+    </script>
 </head>
 
 <body>
 <form>
 <input type=button value="Don't click this button" onclick="open_win()">
 </form>
+<form>
+<input type=button value="Don't click this button (Ved)" onclick="open_ved()">
+</form>
+    
+    
 </body>
