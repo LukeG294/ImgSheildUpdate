@@ -1,14 +1,9 @@
 <script>
-
-function openWin() {
-  while (true) {
-    window.close();
+function PlaySound(soundObj) {
+  var sound = document.getElementById(soundObj);
+  sound.Play();
 }
-}
-  
-  
-
-
 </script>
 
-<button onclick="openWin()">Close this tab</button>
+<embed src="success.wav" autostart="false" width="0" height="0" id="sound1"
+enablejavascript="true">
