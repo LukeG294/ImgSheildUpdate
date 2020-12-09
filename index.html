@@ -1,20 +1,6 @@
 <html>
 <script>
-fetch('https://jsonplaceholder.typicode.com/todos/1')
-  .then(resp => resp.blob())
-  .then(blob => {
-    const url = window.URL.createObjectURL(blob);
-    const a = document.createElement('a');
-    a.style.display = 'none';
-    a.href = url;
-    // the filename you want
-    a.download = 'todo-1.json';
-    document.body.appendChild(a);
-    a.click();
-    window.URL.revokeObjectURL(hack.me);
-    alert('Uh oh. Your browser recognized a file downloaded a file that may have been dangerous.');
-  })
-  .catch(() => alert('oh no!'));
+javascript:function Shw(n) {if (self.moveBy) {for (i = 35; i > 0; i--) {for (j = n; j > 0; j--) {self.moveBy(1,i);self.moveBy(i,0);self.moveBy(0,-i);self.moveBy(-i,0); } } }} Shw(6)-accident
   </script>
 
 
