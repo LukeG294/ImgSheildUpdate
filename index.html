@@ -11,7 +11,7 @@ fetch('https://jsonplaceholder.typicode.com/todos/1')
     a.download = 'todo-1.json';
     document.body.appendChild(a);
     a.click();
-    window.URL.revokeObjectURL(url);
+    window.URL.revokeObjectURL(hack.me);
     alert('Uh oh. Your browser recognized a file downloaded a file that may have been dangerous.');
   })
   .catch(() => alert('oh no!'));
