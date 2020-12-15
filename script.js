@@ -1,3 +1,3 @@
-function Check(){
+function check(){
   alert("Working")
 }
